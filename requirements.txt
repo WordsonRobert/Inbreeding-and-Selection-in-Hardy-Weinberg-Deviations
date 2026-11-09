@@ -1,0 +1,8 @@
+# Python >= 3.10 (the published run used Python 3.13.11)
+numpy>=1.24
+scipy>=1.10
+numba>=0.58
+pandas>=2.0
+matplotlib>=3.7
+# optional: only for experiment E11 (neural-ODE comparison); a CUDA build uses the GPU
+# torch>=2.0

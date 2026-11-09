@@ -1,0 +1,20 @@
+grid K = 218; log-likelihood at the posterior medians -1135.135
+along hs = 0.091, F maximised:
+  h = 0.20  s = 0.455  dloglik = +0.59  (F = 0.031)
+  h = 0.40  s = 0.227  dloglik = +0.25  (F = 0.009)
+  h = 0.62  s = 0.147  dloglik = +0.04  (F = 0.002)
+  h = 1.00  s = 0.091  dloglik = -0.11  (F = -0.002)
+  h = 1.50  s = 0.061  dloglik = -0.19  (F = -0.004)
+recessive models, h = 0, F maximised:
+  s = 0.10  dloglik = -4.06  (F = 0.012, s_eff = 0.001)
+  s = 0.30  dloglik = -2.41  (F = 0.039, s_eff = 0.012)
+  s = 0.45  dloglik = -0.82  (F = 0.067, s_eff = 0.030)
+  s = 0.60  dloglik = +0.64  (F = 0.096, s_eff = 0.057)
+  s = 0.70  dloglik = +0.94  (F = 0.109, s_eff = 0.076)
+  s = 0.80  dloglik = -0.18  (F = 0.116, s_eff = 0.093)
+  s = 0.90  dloglik = -4.73  (F = 0.118, s_eff = 0.106)
+  s = 0.95  dloglik = -10.95  (F = 0.117, s_eff = 0.111)
+  s = 0.98  dloglik = -20.22  (F = 0.116, s_eff = 0.114)
+neutral s = 0, F maximised: -4.70
+second mode of the deterministic model (s, h) = (-0.22, -0.61), F maximised: -0.55
+bimacula adults: observed 11, expected under Hardy-Weinberg 11.27

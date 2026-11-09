@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.nbi
+*.nbc
+.venv/
+results_quick/
+*_run.log
+run_quick.log
+lean/.lake/
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,9 @@
+[E11] device=cuda reps=20
+[E11] rep 1/20 ode=0.0381 lin=0.0355 hmm=0.0344 (757s)
+[E11] rep 2/20 ode=0.0375 lin=0.0182 hmm=0.0170 (1676s)
+[E11] rep 3/20 ode=0.0165 lin=0.0141 hmm=0.0156 (2561s)
+[E11] rep 4/20 ode=0.0290 lin=0.0252 hmm=0.0241 (3409s)
+[E11] rep 5/20 ode=0.0228 lin=0.0222 hmm=0.0215 (4245s)
+[E11] rep 6/20 ode=0.0267 lin=0.0133 hmm=0.0110 (5042s)
+[E11] time budget reached after 6 replicates
+[E11] done {'device': 'cuda', 'reps': 6, 'epochs': 2000, 'ensemble': 10, 'rmse_median': {'ode': 0.027852464388499844, 'linear': 0.02019094606470398, 'HMM': 0.019238212392817318}, 'frac_HMM_better_than_ode': 1.0, 'ode_ensemble_mean_width90_median': 0.013414577968418601}

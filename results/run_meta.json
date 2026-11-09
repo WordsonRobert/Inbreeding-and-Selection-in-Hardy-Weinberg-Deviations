@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "mode": "full",
+    "workers": 15,
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+    "start": "2026-11-09 02:57:37",
+    "stages": [
+      "e01",
+      "e03",
+      "e04",
+      "e05",
+      "e05b",
+      "e07",
+      "e08",
+      "e09",
+      "e10"
+    ],
+    "cpus": {
+      "os_cpu_count": 16,
+      "affinity": 16,
+      "load_avg_1min": 0.6,
+      "usable": 16
+    },
+    "probe_s": 0.164,
+    "slowdown_vs_reference": 0.9,
+    "effective_parallel_cores": 14.9,
+    "est_full_size_hours": 0.76,
+    "replicate_scale": 2.5,
+    "end": "2026-11-09 06:25:56",
+    "total_s": 12499.5
+  },
+  "timing_s": {
+    "e01": 16.2,
+    "e03": 2116.2,
+    "e04": 1902.5,
+    "e05": 1712.7,
+    "e05b": 897.6,
+    "e07": 3051.9,
+    "e08": 468.1,
+    "e09": 1955.1,
+    "e10": 367.9
+  }
+}

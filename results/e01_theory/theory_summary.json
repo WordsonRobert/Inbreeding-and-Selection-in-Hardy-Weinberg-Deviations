@@ -1,0 +1,159 @@
+{
+  "drift_vs_FIS": {
+    "N": 50,
+    "reps": 10000,
+    "gens": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "wright_F": [
+      0.0,
+      0.09561792499119559,
+      0.18209306240276923,
+      0.2602996266117198,
+      0.3310282414303197,
+      0.39499393286246365,
+      0.4528433576092388
+    ],
+    "one_minus_H_over_H0": [
+      -2.799999999991698e-05,
+      0.09510799999999997,
+      0.18431600000000004,
+      0.264848,
+      0.333692,
+      0.40212000000000003,
+      0.4590120000000001
+    ],
+    "F_IS_mean": [
+      -0.010270385664725795,
+      -0.010846211609522377,
+      -0.010285607602826643,
+      -0.00988437135588428,
+      -0.010649694812745079,
+      -0.009927068596753024,
+      -0.011145981939479443
+    ],
+    "expected_F_IS": -0.01
+  },
+  "identities": {
+    "n_checked": 20000,
+    "closed_form_Da_max_err": 8.326672684688674e-17,
+    "kappa_identity_max_err": 5.551115123125783e-17,
+    "mutation_map_max_err": 2.220446049250313e-16,
+    "shapley_efficiency_max_err": 1.8214596497756474e-16,
+    "dummy_selection_max_abs": 3.770132354456261e-17,
+    "rare_allele_seff": [
+      {
+        "q": 0.0001,
+        "median_rel_err": 0.00010946870670721779,
+        "p90_rel_err": 0.000183391088567223
+      },
+      {
+        "q": 0.001,
+        "median_rel_err": 0.0010934162903742197,
+        "p90_rel_err": 0.0018687441331525347
+      },
+      {
+        "q": 0.01,
+        "median_rel_err": 0.010743738674840164,
+        "p90_rel_err": 0.018679436563195977
+      },
+      {
+        "q": 0.05,
+        "median_rel_err": 0.05451127466816644,
+        "p90_rel_err": 0.08979661950634288
+      },
+      {
+        "q": 0.1,
+        "median_rel_err": 0.10755137249786646,
+        "p90_rel_err": 0.17354747583132754
+      },
+      {
+        "q": 0.2,
+        "median_rel_err": 0.21023239120986809,
+        "p90_rel_err": 0.32528366188219876
+      }
+    ]
+  },
+  "identifiability": {
+    "n_cases": 12960,
+    "cross_sectional_rank_max": 2,
+    "temporal_full_rank_fraction": 0.785,
+    "geno_rare": {
+      "median_crlb_s": 1.0673570429842552,
+      "median_crlb_h": 5.572388320089908,
+      "median_crlb_hs": 0.34834950106493656,
+      "median_crlb_seff": 0.12846818152472925,
+      "median_crlb_F": 0.1076681485249245,
+      "median_corr_s_h": 0.9852711544059805
+    },
+    "geno_common": {
+      "median_crlb_s": 0.0333741784525412,
+      "median_crlb_h": 1.2110048652714926,
+      "median_crlb_hs": 0.06553261240573215,
+      "median_crlb_seff": 0.0444310326713829,
+      "median_crlb_F": 0.038801788846692345,
+      "median_corr_s_h": -0.5813707405733852
+    },
+    "pheno_rare": {
+      "median_crlb_s": 19.687771043971882,
+      "median_crlb_h": 92.17740666526659,
+      "median_crlb_hs": 1.353241441418458,
+      "median_crlb_seff": 1.2001408687945205,
+      "median_crlb_F": 12.840799502236038,
+      "median_corr_s_h": -0.9996495593245502
+    },
+    "pheno_common": {
+      "median_crlb_s": 0.5220717388987952,
+      "median_crlb_h": 5.610151232887511,
+      "median_crlb_hs": 0.3593131528588927,
+      "median_crlb_seff": 0.5515711128601697,
+      "median_crlb_F": 8.943692623269557,
+      "median_corr_s_h": -0.9949859904051985
+    },
+    "zygote_rare": {
+      "median_crlb_s": 1.1178562499612072,
+      "median_crlb_h": 6.0444353753677,
+      "median_crlb_hs": 0.3360946196954474,
+      "median_crlb_seff": 0.1408043482231621,
+      "median_crlb_F": 0.0285928375833464,
+      "median_corr_s_h": 0.9846637231995196
+    },
+    "zygote_common": {
+      "median_crlb_s": 0.03302259173762995,
+      "median_crlb_h": 1.1921437869113023,
+      "median_crlb_hs": 0.06515872317782835,
+      "median_crlb_seff": 0.04565013236011065,
+      "median_crlb_F": 0.0220903194942764,
+      "median_corr_s_h": -0.594109445323036
+    }
+  },
+  "order_dependence": {
+    "n_generations": 22500,
+    "median_range_over_orderings_by_op": {
+      "mutation": 0.0,
+      "mendelian_reset": 0.5801,
+      "inbreeding": 0.0359,
+      "drift": 0.022,
+      "selection": 0.0818
+    },
+    "p90_range_over_orderings_by_op": {
+      "mutation": 0.0,
+      "mendelian_reset": 0.7796,
+      "inbreeding": 0.1822,
+      "drift": 0.2516,
+      "selection": 0.2205
+    },
+    "frac_lead_force_differs_lifecycle_vs_shapley": 0.05617777777777778,
+    "frac_lead_force_differs_some_ordering": 0.7111111111111111,
+    "legacy_vs_v3_selection_share_when_F_lt_0.05": {
+      "legacy_mean_abs_alpha_s": 0.6293438772255641,
+      "v3_selection_share": 0.352250698356655
+    }
+  }
+}

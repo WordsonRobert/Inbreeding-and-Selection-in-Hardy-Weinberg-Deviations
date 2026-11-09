@@ -1,0 +1,13 @@
+{
+  "device": "cuda",
+  "reps": 6,
+  "epochs": 2000,
+  "ensemble": 10,
+  "rmse_median": {
+    "ode": 0.027852464388499844,
+    "linear": 0.02019094606470398,
+    "HMM": 0.019238212392817318
+  },
+  "frac_HMM_better_than_ode": 1.0,
+  "ode_ensemble_mean_width90_median": 0.013414577968418601
+}

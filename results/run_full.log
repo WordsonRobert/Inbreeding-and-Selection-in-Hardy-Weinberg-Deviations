@@ -1,0 +1,171 @@
+[run_all] CPUs: {'os_cpu_count': 16, 'affinity': 16, 'load_avg_1min': 0.6, 'usable': 16}
+[run_all] mode=full workers=15 out=results_v3
+[run_all] compiling kernels (normally 20-90 s) ...
+[run_all] compiled in 0s
+[run_all] measuring single-core speed and parallel throughput ...
+[run_all] one core here is 0.9x the reference time (standard fit ~1.8s); 15 workers deliver ~14.9 cores of throughput; full size ~0.76 h
+[run_all] replicate scale 2.50 for a 2.0 h budget
+[run_all] starting E11 in background (cuda=True, reps=20, epochs=2000) -> e11_legacy_ode.log
+
+=== e01 ===
+  E01a drift vs F_IS
+  E01b identities
+  E01c selection-induced F_IS map
+  E02 Fisher-information identifiability
+  E06 operator order
+=== e01 done in 16s (total 28s) ===
+
+=== e03 ===
+  E03 simulation-based calibration
+    [SBC Ne_known] 250/2500  (84s, ETA ~12.6 min)
+    [SBC Ne_known] 500/2500  (166s, ETA ~11.1 min)
+    [SBC Ne_known] 750/2500  (247s, ETA ~9.6 min)
+    [SBC Ne_known] 1000/2500  (335s, ETA ~8.4 min)
+    [SBC Ne_known] 1250/2500  (423s, ETA ~7.1 min)
+    [SBC Ne_known] 1500/2500  (510s, ETA ~5.7 min)
+    [SBC Ne_known] 1750/2500  (594s, ETA ~4.2 min)
+    [SBC Ne_known] 2000/2500  (679s, ETA ~2.8 min)
+    [SBC Ne_known] 2250/2500  (763s, ETA ~1.4 min)
+    [SBC Ne_known] 2500/2500  (846s, ETA ~0.0 min)
+    [SBC Ne_inferred] 150/1500  (131s, ETA ~19.7 min)
+    [SBC Ne_inferred] 300/1500  (255s, ETA ~17.0 min)
+    [SBC Ne_inferred] 450/1500  (382s, ETA ~14.8 min)
+    [SBC Ne_inferred] 600/1500  (513s, ETA ~12.8 min)
+    [SBC Ne_inferred] 750/1500  (645s, ETA ~10.8 min)
+    [SBC Ne_inferred] 900/1500  (771s, ETA ~8.6 min)
+    [SBC Ne_inferred] 1050/1500  (894s, ETA ~6.4 min)
+    [SBC Ne_inferred] 1200/1500  (1019s, ETA ~4.2 min)
+    [SBC Ne_inferred] 1350/1500  (1148s, ETA ~2.1 min)
+    [SBC Ne_inferred] 1500/1500  (1269s, ETA ~0.0 min)
+=== e03 done in 2116s (total 2144s) ===
+
+=== e04 ===
+  E04 robustness
+    [robustness] 420/4200  (244s, ETA ~36.7 min)
+    [robustness] 840/4200  (484s, ETA ~32.3 min)
+    [robustness] 1260/4200  (634s, ETA ~24.6 min)
+    [robustness] 1680/4200  (775s, ETA ~19.4 min)
+    [robustness] 2100/4200  (881s, ETA ~14.7 min)
+    [robustness] 2520/4200  (974s, ETA ~10.8 min)
+    [robustness] 2940/4200  (1207s, ETA ~8.6 min)
+    [robustness] 3360/4200  (1523s, ETA ~6.3 min)
+    [robustness] 3780/4200  (1777s, ETA ~3.3 min)
+    [robustness] 4200/4200  (1902s, ETA ~0.0 min)
+=== e04 done in 1902s (total 4046s) ===
+
+=== e05 ===
+  E05 stress tests
+    [violations] 500/5000  (145s, ETA ~21.7 min)
+    [violations] 1000/5000  (291s, ETA ~19.4 min)
+    [violations] 1500/5000  (435s, ETA ~16.9 min)
+    [violations] 2000/5000  (879s, ETA ~22.0 min)
+    [violations] 2500/5000  (1027s, ETA ~17.1 min)
+    [violations] 3000/5000  (1164s, ETA ~12.9 min)
+    [violations] 3500/5000  (1299s, ETA ~9.3 min)
+    [violations] 4000/5000  (1441s, ETA ~6.0 min)
+    [violations] 4500/5000  (1577s, ETA ~2.9 min)
+    [violations] 5000/5000  (1710s, ETA ~0.0 min)
+=== e05 done in 1713s (total 5759s) ===
+
+=== e05b ===
+  E05b failure map
+    [failure map] 360/3600  (78s, ETA ~11.7 min)
+    [failure map] 720/3600  (157s, ETA ~10.5 min)
+    [failure map] 1080/3600  (236s, ETA ~9.2 min)
+    [failure map] 1440/3600  (314s, ETA ~7.8 min)
+    [failure map] 1800/3600  (391s, ETA ~6.5 min)
+    [failure map] 2160/3600  (451s, ETA ~5.0 min)
+    [failure map] 2520/3600  (536s, ETA ~3.8 min)
+    [failure map] 2880/3600  (615s, ETA ~2.6 min)
+    [failure map] 3240/3600  (788s, ETA ~1.5 min)
+    [failure map] 3600/3600  (897s, ETA ~0.0 min)
+=== e05b done in 898s (total 6656s) ===
+
+=== e07 ===
+    [migration] 912/9125  (234s, ETA ~35.1 min)
+    [migration] 1824/9125  (464s, ETA ~30.9 min)
+    [migration] 2736/9125  (707s, ETA ~27.5 min)
+    [migration] 3648/9125  (963s, ETA ~24.1 min)
+    [migration] 4560/9125  (1230s, ETA ~20.5 min)
+    [migration] 5472/9125  (1742s, ETA ~19.4 min)
+    [migration] 6384/9125  (2299s, ETA ~16.5 min)
+    [migration] 7296/9125  (2548s, ETA ~10.6 min)
+    [migration] 8208/9125  (2803s, ETA ~5.2 min)
+    [migration] 9120/9125  (3050s, ETA ~0.0 min)
+    [migration] 9125/9125  (3050s, ETA ~0.0 min)
+=== e07 done in 3052s (total 9708s) ===
+
+=== e08 ===
+    [reconstruction] 100/1000  (49s, ETA ~7.4 min)
+    [reconstruction] 200/1000  (96s, ETA ~6.4 min)
+    [reconstruction] 300/1000  (137s, ETA ~5.3 min)
+    [reconstruction] 400/1000  (182s, ETA ~4.6 min)
+    [reconstruction] 500/1000  (226s, ETA ~3.8 min)
+    [reconstruction] 600/1000  (274s, ETA ~3.0 min)
+    [reconstruction] 700/1000  (326s, ETA ~2.3 min)
+    [reconstruction] 800/1000  (374s, ETA ~1.6 min)
+    [reconstruction] 900/1000  (422s, ETA ~0.8 min)
+    [reconstruction] 1000/1000  (468s, ETA ~0.0 min)
+=== e08 done in 468s (total 10176s) ===
+
+=== e09 ===
+  empirical fits (parallel)
+    [empirical MCMC] 1/7  (26s, ETA ~2.6 min)
+    [empirical MCMC] 2/7  (46s, ETA ~1.9 min)
+    [empirical MCMC] 3/7  (54s, ETA ~1.2 min)
+    [empirical MCMC] 4/7  (57s, ETA ~0.7 min)
+    [empirical MCMC] 5/7  (57s, ETA ~0.4 min)
+    [empirical MCMC] 6/7  (57s, ETA ~0.2 min)
+    [empirical MCMC] 7/7  (151s, ETA ~0.0 min)
+  Panaxia
+    [Panaxia bootstrap Ne_FisherFord] 50/500  (114s, ETA ~17.1 min)
+    [Panaxia bootstrap Ne_FisherFord] 100/500  (202s, ETA ~13.4 min)
+    [Panaxia bootstrap Ne_FisherFord] 150/500  (287s, ETA ~11.2 min)
+    [Panaxia bootstrap Ne_FisherFord] 200/500  (396s, ETA ~9.9 min)
+    [Panaxia bootstrap Ne_FisherFord] 250/500  (484s, ETA ~8.1 min)
+    [Panaxia bootstrap Ne_FisherFord] 300/500  (570s, ETA ~6.3 min)
+    [Panaxia bootstrap Ne_FisherFord] 350/500  (684s, ETA ~4.9 min)
+    [Panaxia bootstrap Ne_FisherFord] 400/500  (769s, ETA ~3.2 min)
+    [Panaxia bootstrap Ne_FisherFord] 450/500  (857s, ETA ~1.6 min)
+    [Panaxia bootstrap Ne_FisherFord] 500/500  (951s, ETA ~0.0 min)
+    [Panaxia bootstrap Ne_inferred] 50/500  (33s, ETA ~5.0 min)
+    [Panaxia bootstrap Ne_inferred] 100/500  (60s, ETA ~4.0 min)
+    [Panaxia bootstrap Ne_inferred] 150/500  (90s, ETA ~3.5 min)
+    [Panaxia bootstrap Ne_inferred] 200/500  (118s, ETA ~2.9 min)
+    [Panaxia bootstrap Ne_inferred] 250/500  (148s, ETA ~2.5 min)
+    [Panaxia bootstrap Ne_inferred] 300/500  (176s, ETA ~2.0 min)
+    [Panaxia bootstrap Ne_inferred] 350/500  (210s, ETA ~1.5 min)
+    [Panaxia bootstrap Ne_inferred] 400/500  (242s, ETA ~1.0 min)
+    [Panaxia bootstrap Ne_inferred] 450/500  (272s, ETA ~0.5 min)
+    [Panaxia bootstrap Ne_inferred] 500/500  (303s, ETA ~0.0 min)
+  peppered moth
+    [moth bootstrap] 50/500  (63s, ETA ~9.4 min)
+    [moth bootstrap] 100/500  (117s, ETA ~7.8 min)
+    [moth bootstrap] 150/500  (169s, ETA ~6.6 min)
+    [moth bootstrap] 200/500  (230s, ETA ~5.8 min)
+    [moth bootstrap] 250/500  (284s, ETA ~4.7 min)
+    [moth bootstrap] 300/500  (335s, ETA ~3.7 min)
+    [moth bootstrap] 350/500  (395s, ETA ~2.8 min)
+    [moth bootstrap] 400/500  (447s, ETA ~1.9 min)
+    [moth bootstrap] 450/500  (499s, ETA ~0.9 min)
+    [moth bootstrap] 500/500  (547s, ETA ~0.0 min)
+  cross-sectional datasets
+=== e09 done in 1955s (total 12132s) ===
+
+=== e10 ===
+    [legacy vs v3] 100/1000  (38s, ETA ~5.8 min)
+    [legacy vs v3] 200/1000  (75s, ETA ~5.0 min)
+    [legacy vs v3] 300/1000  (113s, ETA ~4.4 min)
+    [legacy vs v3] 400/1000  (148s, ETA ~3.7 min)
+    [legacy vs v3] 500/1000  (186s, ETA ~3.1 min)
+    [legacy vs v3] 600/1000  (221s, ETA ~2.5 min)
+    [legacy vs v3] 700/1000  (256s, ETA ~1.8 min)
+    [legacy vs v3] 800/1000  (291s, ETA ~1.2 min)
+    [legacy vs v3] 900/1000  (326s, ETA ~0.6 min)
+    [legacy vs v3] 1000/1000  (360s, ETA ~0.0 min)
+  oracle ROC reproduction
+  Panaxia legacy modes
+=== e10 done in 368s (total 12499s) ===
+[run_all] waiting for E11 (neural ODE) ...
+
+[run_all] finished in 12500s -> results_v3/SUMMARY.md
