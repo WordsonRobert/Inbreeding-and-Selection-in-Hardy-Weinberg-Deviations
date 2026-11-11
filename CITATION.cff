@@ -2,25 +2,26 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the manuscript below (to be updated on publication)."
 title: "BASTION: code, data and outputs for 'Inbreeding and selection in Hardy–Weinberg deviations'"
 version: 1.0.0
-date-released: 2026-11-10
+date-released: 2026-11-11
 repository-code: "https://github.com/WordsonRobert/Inbreeding-and-Selection-in-Hardy-Weinberg-Deviations"
 authors:
   - family-names: Robert
     given-names: Wordson
     email: wr24ms190@iiserkol.ac.in
-    affiliation: Indian Institute of Science Education and Research Kolkata
+    orcid: "https://orcid.org/0009-0001-7340-5530"
+    affiliation: "Department of Mathematics and Statistics, Indian Institute of Science Education and Research Kolkata"
   - family-names: Menon
     given-names: Gautam
     email: gsm24ms220@iiserkol.ac.in
-    affiliation: Indian Institute of Science Education and Research Kolkata
+    affiliation: "Department of Biological Sciences, Indian Institute of Science Education and Research Kolkata"
   - family-names: Shenoy
     given-names: Amogh Pete
     email: aps24ms227@iiserkol.ac.in
-    affiliation: Indian Institute of Science Education and Research Kolkata
+    affiliation: "Department of Mathematics and Statistics, Indian Institute of Science Education and Research Kolkata"
   - family-names: Singh
     given-names: Sahil
     email: ss24ms223@iiserkol.ac.in
-    affiliation: Indian Institute of Science Education and Research Kolkata
+    affiliation: "Department of Computational and Data Sciences, Indian Institute of Science Education and Research Kolkata"
 preferred-citation:
   type: article
   title: "Inbreeding and selection in Hardy–Weinberg deviations: exact attribution, identifiability limits and calibrated inference from genotype time series"
