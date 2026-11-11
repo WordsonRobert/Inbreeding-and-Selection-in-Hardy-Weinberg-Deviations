@@ -1,0 +1,82 @@
+20/200 done (20 s)
+40/200 done (39 s)
+60/200 done (59 s)
+80/200 done (79 s)
+100/200 done (99 s)
+120/200 done (118 s)
+140/200 done (138 s)
+160/200 done (157 s)
+180/200 done (177 s)
+200/200 done (197 s)
+{
+  "additive": {
+    "n": 100,
+    "bastion_converged": 0.97,
+    "allele_HMM": {
+      "s_bias_median": -0.0001778166017102397,
+      "s_rmse": 0.019709367858916825,
+      "s_cov90": 0.91,
+      "s_width90_median": 0.05578099997942957,
+      "hs_rmse": 0.009854683929458413,
+      "hs_cov90": 0.91
+    },
+    "BASTION": {
+      "s_bias_median": -0.0054240978548908275,
+      "s_rmse": 0.024282174920584397,
+      "s_cov90": 0.96,
+      "s_width90_median": 0.08696058283575847,
+      "hs_rmse": 0.020572317024033268,
+      "hs_cov90": 0.99,
+      "F_cov90": 0.94
+    },
+    "seconds_per_fit_median": {
+      "allele_HMM": 0.16730999946594238,
+      "BASTION": 1.789596676826477
+    }
+  },
+  "dominance": {
+    "n": 100,
+    "bastion_converged": 0.98,
+    "allele_HMM": {
+      "s_bias_median": -0.0030284984451012624,
+      "s_rmse": 0.031210127671105654,
+      "s_cov90": 0.69,
+      "s_width90_median": 0.054768922270891696,
+      "hs_rmse": 0.028237511447034905,
+      "hs_cov90": 0.42
+    },
+    "BASTION": {
+      "s_bias_median": 0.00013649387556489978,
+      "s_rmse": 0.028284919920060353,
+      "s_cov90": 0.96,
+      "s_width90_median": 0.08062635140853408,
+      "hs_rmse": 0.032902336155058116,
+      "hs_cov90": 0.99,
+      "F_cov90": 0.93
+    },
+    "seconds_per_fit_median": {
+      "allele_HMM": 0.16455841064453125,
+      "BASTION": 1.7973695993423462
+    }
+  },
+  "meta": {
+    "reps_per_design": 100,
+    "workers": 2,
+    "wall_seconds": 196.81264805793762,
+    "design": {
+      "T": 40,
+      "step": 5,
+      "n": 300,
+      "Ne": 1000.0,
+      "p0": "U(0.2,0.8)",
+      "s": "+-U(0.02,0.15)",
+      "h": {
+        "additive": 0.5,
+        "dominance": "U(0,1)"
+      },
+      "F": 0.0,
+      "mu": 1e-05,
+      "master_seed": 121
+    }
+  }
+}

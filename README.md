@@ -38,6 +38,7 @@ without rerunning anything. The algebraic results are machine-checked in Lean 4 
 │   ├── e09_empirical.py      E09 Panaxia, Biston, single samples, bootstrap closure tests
 │   ├── e10_legacy.py         E10 deterministic-trajectory model vs BASTION on the same data
 │   ├── e11_legacy_ode.py     E11 neural-ODE interpolator vs BASTION (optional, GPU)
+│   ├── e12_allele_hmm_comparison.py  E12 allele-frequency HMM estimator of s vs BASTION (run on its own)
 │   ├── worker.py             one fit per call (used by the process pool)
 │   ├── common.py             replicate counts, MCMC settings, helpers
 │   ├── summarize.py          writes results/SUMMARY.md from the summary JSON files
@@ -184,6 +185,19 @@ same data sets and use the same sampler seeds on any machine and with any number
 
 Total: 12 500 s (3.5 h) of wall time.
 
+**E12** is not part of `run_all.py`; it is a single script added for the manuscript
+(Section 5.4, Table 3) and run on its own:
+
+    python experiments/e12_allele_hmm_comparison.py --reps 100 --workers 2
+
+| stage | what is done | design | replicates | outputs in `results/` | time |
+|---|---|---|---|---|---|
+| E12 | the standard allele-frequency HMM (random mating, additive selection, allele counts binomial in 2n; maximum likelihood with a 90% profile-likelihood interval, on BASTION's transition kernel) vs BASTION on the same data | model-exact, random mating, T = 40, n = 300 every 5 generations, N_e = 1000 known; p0 ~ U(0.2, 0.8), s ~ ±U(0.02, 0.15); h = 1/2 or h ~ U(0, 1) | 2 × 100 | `e12_allele_hmm_comparison/` | 197 s on 2 cores |
+
+Result: with h = 1/2 the allele-frequency HMM is somewhat more precise (RMSE of s 0.020 vs
+0.024; 90% coverage 0.91 vs 0.96); with h ~ U(0, 1) its 90% intervals cover s in 69% of data
+sets and hs (as s/2) in 42%, against 96% and 99% for BASTION.
+
 ---
 
 ## Reproducing the published run
@@ -291,6 +305,8 @@ Other files in `results/`:
 | `e10_legacy/legacy_vs_v3.csv` | per population: coverage and medians for the deterministic model (`legacy_*`) and BASTION (`v3_*`; "v3" is the name of the current method in the code) |
 | `e10_legacy/legacy_summary.json` | the summaries, plus the eight dispersed chains of the deterministic model on Panaxia |
 | `e11_legacy_ode/legacy_ode_summary.json`, `legacy_ode_rows.json` | E11 summary and per-replicate RMSEs |
+| `e12_allele_hmm_comparison/comparison.csv` | E12 per data set: true values, both estimates and 90% intervals (`allele_*`, `bastion_*`), BASTION's F, convergence and time per fit |
+| `e12_allele_hmm_comparison/comparison_summary.json`, `run.log` | E12 RMSE, bias, coverage and interval width per design and method; the console log |
 
 ---
 
