@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the manuscript below (to be updated on publication)."
 title: "BASTION: code, data and outputs for 'Inbreeding and selection in Hardy–Weinberg deviations'"
 version: 1.0.0
+doi: 10.5281/zenodo.24135457
 date-released: 2026-11-11
 repository-code: "https://github.com/WordsonRobert/Inbreeding-and-Selection-in-Hardy-Weinberg-Deviations"
 authors:

@@ -1,5 +1,7 @@
 # Inbreeding and selection in Hardy–Weinberg deviations
 
+[![DOI](https://zenodo.org/badge/1451824375.svg)](https://doi.org/10.5281/zenodo.24135457)
+
 This repository holds the code, data and outputs for the manuscript
 
 > **Inbreeding and selection in Hardy–Weinberg deviations: exact attribution, identifiability
